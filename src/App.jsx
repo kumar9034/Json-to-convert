@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ObjectInspector } from "react-inspector";
 import { Document, Packer, Paragraph, TextRun } from "docx";
 import { saveAs } from "file-saver";
+const Tree = React.lazy(() => import("react-d3-tree"));
 
 export default function App() {
   const [jsonData, setJsonData] = useState({
